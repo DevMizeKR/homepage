@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <header className="main-nav">
         <div className="internal-links">
+          <img className="profile-image-nav" alt="DevMizeKR" src="images/profile.jpg" />
           asdf
         </div>
       </header>
