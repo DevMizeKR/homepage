@@ -1,8 +1,24 @@
+@font-face {
+  font-family: "NexonKartGothic";
+  font-weight: normal;
+  src: url("./fonts/NEXON\ Kart\ Gothic\ Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NexonKartGothic";
+  font-weight: bold;
+  src: url("./fonts/NEXON\ Kart\ Gothic\ Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NexonKartGothic";
+  font-weight: bolder;
+  src: url("./fonts/NEXON\ Kart\ Gothic\ ExtraBold.ttf") format("truetype");
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "NexonKartGothic";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
