@@ -5,7 +5,9 @@ function App() {
   return (
     <div className="App">
       <header className="main-nav">
-        <div>DevMizeKR</div>
+        <div className="internal-links">
+          asdf
+        </div>
       </header>
     </div>
   );
