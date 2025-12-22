@@ -1,0 +1,26 @@
+.nav-main{
+  background: white;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  border-bottom: solid 1px #777777;
+}
+
+.nav-image-profile {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 100%;
+  border-width: 2px;
+  border-color: #7F00FF;
+}
+
+.nav-text {
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 10px 20px;
+}

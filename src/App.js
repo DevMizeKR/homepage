@@ -1,15 +1,28 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
+import NavBar from "./components/NavBar";
 import './App.css';
 
-function App() {
+function AppLayout() {
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+
   return (
-    <BrowserRouter>
+    <>
+      {!isHome && <NavBar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <AppLayout />
     </BrowserRouter>
   );
 }
