@@ -1,26 +1,73 @@
-.nav-main{
+.nav-main {
   background: white;
   width: 100%;
   display: flex;
   text-align: center;
   justify-content: space-between;
   border-bottom: solid 1px #777777;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  position: fixed;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  position: relative;
+  display: flex;
 }
 
 .nav-image-profile {
   width: 40px;
   height: 40px;
   overflow: hidden;
-  padding: 10px 20px;
   cursor: pointer;
   border-radius: 100%;
   border-width: 2px;
   border-color: #7F00FF;
+  padding-right: 10px;
 }
 
 .nav-text {
+  background: none;
+  border: none;
   color: black;
+  font-family: 'NexonKartGothic';
   font-weight: bold;
   font-size: 30px;
-  padding: 10px 20px;
+  cursor: pointer;
+  padding: 0px 10px;
+}
+
+.nav-text.active {
+  border-bottom: 2px solid #7f00ff;
+  font-weight: bolder;
+}
+
+.nav-underline {
+  position: absolute;
+  bottom: -10px;
+  height: 2px;
+  background-color: #7F00FF;
+  transition: transform 0.3s ease, width 0.3s ease;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-right a {
+  display: flex;
+  font-size: 40px;
+  color: black;
+  transition: color 0.2s ease;
+}
+
+.nav-right a:hover {
+  color: #7f00ff;
 }

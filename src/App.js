@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
-import Profile from "./pages/Profile";
+import Main from "./pages/Main";
 import NavBar from "./components/NavBar";
 import './App.css';
 
@@ -13,7 +13,7 @@ function AppLayout() {
       {!isHome && <NavBar />}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/main" element={<Main />} />
       </Routes>
     </>
   );
