@@ -1,31 +1,43 @@
 import { useNavigate, useLocation } from "react-router-dom";
-import { useEffect, useRef, useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import "./NavBar.css";
 
+const NAV_ITEMS = [
+    { path: "/main", label: "Main", refKey: "main" },
+    { path: "/blog", label: "Blog", refKey: "blog" }
+];
+
 function NavBar() {
     const navigate = useNavigate();
-    const location = useLocation();
+    const { pathname } = useLocation();
 
     const containerRef = useRef(null);
-    const mainRef = useRef(null);
-    const blogRef = useRef(null);
+    const itemRefs = {
+        main: useRef(null),
+        blog: useRef(null),
+    }
 
     const [underlineStyle, setUnderlineStyle] = useState({ width:0, left:0 });
 
-    useEffect(() => {
-        let activeRef = null;
+    useLayoutEffect(() => {
+        const updateUnderline = () => {
+            const activeItem = NAV_ITEMS.find(item => item.path === pathname);
+            if (!activeItem) return;
 
-        if (location.pathname === "/main") { activeRef = mainRef; }
-        else if (location.pathname === "/blog") { activeRef = blogRef; }
+            const activeRef = itemRefs[activeItem.refKey].current;
+            const container = containerRef.current;
+            
+            if (!activeRef || !container) return;
 
+            const containerLeft = container.getBoundingClientRect().left;
+            const { left, width } = activeRef.getBoundingClientRect();
 
-        if (activeRef?.current && containerRef.current) {
-            const containerLeft = containerRef.current.getBoundingClientRect().left;
-            const { left, width } = activeRef.current.getBoundingClientRect();
-            setUnderlineStyle({left: left - containerLeft, width,});
+            setUnderlineStyle({ left: left-containerLeft, width, });
         }
-    }, [location.pathname]);
+
+        document.fonts?.ready.then(updateUnderline);
+    }, [pathname]);
     
     return (
         <nav className="nav-main">
@@ -37,18 +49,15 @@ function NavBar() {
                     onClick={() => navigate("/")}
                 />
                 <div className="nav-link" ref={containerRef}>
-                    <button
-                        ref={mainRef}
-                        className="nav-text"
-                        onClick={() => navigate("/main")}>
-                        Main
-                    </button>
-                    <button
-                        ref={blogRef}
-                        className="nav-text"
-                        onClick={() => navigate("/blog")}>
-                        Blog
-                    </button>
+                    {NAV_ITEMS.map(item => (
+                        <button
+                            key={item.path}
+                            ref={itemRefs[item.refKey]}
+                            className="nav-text"
+                            onClick={() => navigate(item.path)}>
+                            {item.label}
+                        </button>
+                    ))}
                     <span
                         className="nav-underline"
                         style={{
