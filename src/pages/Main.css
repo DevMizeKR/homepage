@@ -1,0 +1,20 @@
+.side-card {
+  text-align: center;
+}
+
+.side-text-profile {
+  background: none;
+  border: none;
+  color: black;
+  font-family: 'NexonKartGothic';
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.side-image-profile {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 100%;
+}
