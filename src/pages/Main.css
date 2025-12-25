@@ -1,4 +1,7 @@
 .side-card {
+  background-color: #7f00ff1A;
+  border: 2px solid #7f00ff;
+  border-radius: 5%;
   text-align: center;
 }
 
