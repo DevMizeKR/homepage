@@ -1,8 +1,19 @@
 .side-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
   background-color: #7f00ff1A;
   border: 2px solid #7f00ff;
   border-radius: 5%;
-  text-align: center;
+}
+
+.side-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .side-text-profile {
@@ -20,4 +31,10 @@
   overflow: hidden;
   border: 2px solid black;
   border-radius: 100%;
+}
+
+.side-image-link {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 }
