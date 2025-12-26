@@ -10,7 +10,12 @@ function AppLayout() {
 
   return (
     <>
-      {!isHome && <NavBar />}
+      {!isHome && (
+        <header className="app-header">
+          <NavBar />
+        </header>
+      )}
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/main" element={<Main />} />

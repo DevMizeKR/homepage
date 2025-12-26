@@ -21,7 +21,7 @@ function Main() {
           <a href="https://github.com/DevMizeKR" target="_blank" rel="noopener noreferrer">
             <img src="/icons/logo_github.svg" alt="GitHub" className="side-image-link" />
           </a>
-          <a href="https://www.instagram.com/hwang_c_k_/" target="_blank" rel="noopener noreferrer">
+          <a href="mailto:hwangck0827@gmail.com" target="_blank" rel="noopener noreferrer">
             <img src="/icons/logo_gmail.svg" alt="Gmail" className="side-image-link" />
           </a>
         </div>
