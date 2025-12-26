@@ -1,18 +1,21 @@
 @font-face {
   font-family: "NexonKartGothic";
-  font-weight: normal;
+  font-weight: 500;
+  font-style: normal;
   src: url("./fonts/NEXON\ Kart\ Gothic\ Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "NexonKartGothic";
-  font-weight: bold;
+  font-weight: 700;
+  font-style: bold;
   src: url("./fonts/NEXON\ Kart\ Gothic\ Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "NexonKartGothic";
-  font-weight: bolder;
+  font-weight: 800;
+  font-style: bolder;
   src: url("./fonts/NEXON\ Kart\ Gothic\ ExtraBold.ttf") format("truetype");
 }
 
@@ -21,9 +24,4 @@ body {
   font-family: "NexonKartGothic";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }

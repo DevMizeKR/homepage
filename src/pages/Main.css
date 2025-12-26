@@ -1,3 +1,8 @@
+.main-main {
+  display: flex;
+  gap: 40px;
+}
+
 .side-card {
   display: flex;
   flex-direction: column;
@@ -23,6 +28,16 @@
   font-family: 'NexonKartGothic';
   font-weight: bold;
   font-size: 50px;
+  margin-bottom: -20px;
+}
+
+.side-text-description {
+  background: none;
+  border: none;
+  color: black;
+  font-family: 'NexonKartGothic';
+  font-weight: normal;
+  font-size: 25px;
 }
 
 .side-image-profile {
@@ -37,4 +52,13 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
+}
+
+.contents-holder {
+  background: none;
+  display: block;
+}
+
+.contents-layer {
+  display: grid;
 }

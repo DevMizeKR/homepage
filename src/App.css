@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+main {
+  width: 80%;
+  max-width: calc(100%-2em);
+  margin: auto;
+  padding: 40px 20px;
+}
+
 .container {
   display: flex;
   justify-content: center;

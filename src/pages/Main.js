@@ -2,15 +2,15 @@ import "./Main.css"
 
 function Main() {
   return (
-    <body className="">
-      <aside className="side-card">
+    <main className="main-main">
+      <div className="side-card">
         <img
           src="images/profile.jpg"
           alt="DevMizeKR"
           className="side-image-profile"
         />
         <h1 className="side-text-profile">Mize</h1>
-        <p className="">Game Developer @ KR</p>
+        <p className="side-text-description">Game Developer @ KR</p>
         <div className="side-link">
           <a href="https://www.instagram.com/hwang_c_k_/" target="_blank" rel="noopener noreferrer">
             <img src="/icons/logo_instagram.svg" alt="Instagram" className="side-image-link" />
@@ -25,8 +25,18 @@ function Main() {
             <img src="/icons/logo_gmail.svg" alt="Gmail" className="side-image-link" />
           </a>
         </div>
-      </aside>
-    </body>
+      </div>
+      <div className="contents-holder">
+        <div className="contents-layer">
+          <div className="contents-holder">
+            <h2>Main Work</h2>
+          </div>
+          <div className="contents-holder">
+            <h2>Skill & Tools</h2>
+          </div>
+        </div>
+      </div>
+    </main>
   );
 }
 
