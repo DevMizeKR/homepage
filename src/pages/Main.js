@@ -26,15 +26,40 @@ function Main() {
           </a>
         </div>
       </div>
-      <div className="contents-holder">
-        <div className="contents-layer">
-          <div className="contents-holder">
-            <h2>Main Work</h2>
+      <div className="content-grid">
+        <section className="content-card main-work">
+          <h2>Main Work</h2>
+          <div className="content-block">
+            <h4>
+              <span className="emoji">🎮</span>
+              <span className="">Game Developer</span>
+            </h4>
+            <p>Designing & Developing Games with Various Tools</p>
           </div>
-          <div className="contents-holder">
-            <h2>Skill & Tools</h2>
+          <div className="content-block">
+            <h4>
+              <span className="emoji">📱</span>
+              <span className="">App Developer</span>
+            </h4>
+            <p>Developing Mobile Apps, Especially on iOS</p>
           </div>
-        </div>
+          <div className="content-block">
+            <h4>
+              <span className="emoji">🛠️</span>
+              <span className="">Glitch Finder</span>
+            </h4>
+            <p>Finding & Utilizing Glitches, Especially in Classic Games</p>
+          </div>
+        </section>
+        <section className="content-card skill-tools">
+          <h2>Skill & Tools</h2>
+        </section>
+        <section className="content-card projects">
+          <h2>Projects</h2>
+        </section>
+        <section className="content-card experiences">
+          <h2>Experiences</h2>
+        </section>
       </div>
     </main>
   );

@@ -1,5 +1,6 @@
 .main-main {
   display: flex;
+  width: 80%;
   gap: 40px;
 }
 
@@ -26,8 +27,9 @@
   border: none;
   color: black;
   font-family: 'NexonKartGothic';
-  font-weight: bold;
+  font-weight: 700;
   font-size: 50px;
+  margin-top: -10px;
   margin-bottom: -20px;
 }
 
@@ -36,8 +38,8 @@
   border: none;
   color: black;
   font-family: 'NexonKartGothic';
-  font-weight: normal;
-  font-size: 25px;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .side-image-profile {
@@ -54,11 +56,49 @@
   cursor: pointer;
 }
 
-.contents-holder {
-  background: none;
-  display: block;
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  flex: 1;
 }
 
-.contents-layer {
-  display: grid;
+.content-card {
+  background: none;
+  border: 2px solid #7F00FF;
+  border-radius: 5%;
+  padding: 10px 20px;
+}
+
+.content-card h2 {
+  font-family: 'NexonKartGothic';
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content-block h4 {
+  font-family: 'NexonKartGothic';
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.content-block p {
+  font-family: 'NexonKartGothic';
+  font-weight: 400;
+  font-size: 15px;
+  color: #777777;
+}
+
+.content-block .emoji {
+  width: 32px;
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.projects,
+.experiences {
+  grid-column: 1 / -1;
 }
