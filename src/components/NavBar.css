@@ -4,7 +4,7 @@
   display: flex;
   text-align: center;
   justify-content: space-between;
-  border-bottom: solid 1px #777777;
+  border-bottom: solid 1px var(--description-color);
   padding: 10px 20px;
   box-sizing: border-box;
   position: sticky;
@@ -26,7 +26,7 @@
   overflow: hidden;
   cursor: pointer;
   border-radius: 100%;
-  border: 2px solid #7F00FF;
+  border: 2px solid var(--main-color);
   margin-right: 10px;
 }
 
@@ -42,11 +42,11 @@
 }
 
 .nav-text:hover {
-  color: #7F00FF
+  color: var(--main-color)
 }
 
 .nav-text.active {
-  border-bottom: 2px solid #7f00ff;
+  border-bottom: 2px solid var(--main-color);
   font-weight: bolder;
 }
 
@@ -54,7 +54,7 @@
   position: absolute;
   bottom: -10px;
   height: 2px;
-  background-color: #7F00FF;
+  background-color: var(--main-color);
   transition: transform 0.3s ease, width 0.3s ease;
 }
 
@@ -72,5 +72,5 @@
 }
 
 .nav-right a:hover {
-  color: #7f00ff;
+  color: var(--main-color);
 }

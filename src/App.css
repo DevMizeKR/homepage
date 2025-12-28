@@ -1,3 +1,9 @@
+:root {
+  --main-color: #7F00FF;
+  --divider-color: #BBBBBB;
+  --description-color: #777777;
+}
+
 * {
   margin: 0;
   padding: 0;

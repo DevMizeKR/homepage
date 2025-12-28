@@ -11,7 +11,7 @@
   gap: 10px;
   padding: 20px;
   background-color: #7f00ff1A;
-  border: 2px solid #7f00ff;
+  border: 2px solid var(--main-color);
   border-radius: 5%;
 }
 
@@ -65,9 +65,9 @@
 
 .content-card {
   background: none;
-  border: 2px solid #7F00FF;
   border-radius: 5%;
   padding: 10px 20px;
+  gap: 10px;
 }
 
 .content-card h2 {
@@ -76,6 +76,11 @@
   font-size: 30px;
   text-align: center;
   margin-bottom: 10px;
+}
+
+.content-block {
+  padding: 10px;
+  border-bottom: 1px solid var(--divider-color);
 }
 
 .content-block h4 {
@@ -88,7 +93,7 @@
   font-family: 'NexonKartGothic';
   font-weight: 400;
   font-size: 15px;
-  color: #777777;
+  color: var(--description-color);
 }
 
 .content-block .emoji {
