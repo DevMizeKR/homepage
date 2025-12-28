@@ -1,0 +1,58 @@
+[
+    {
+        "name": "C",
+        "icon": "/icons/logo_c.svg"
+    },
+    {
+        "name": "C++",
+        "icon": "/icons/logo_cpp.svg"
+    },
+    {
+        "name": "Python",
+        "icon": "/icons/logo_python.svg"
+    },
+    {
+        "name": "Swift",
+        "icon": "/icons/logo_swift.svg"
+    },
+    {
+        "name": "Kotlin",
+        "icon": "/icons/logo_kotlin.svg"
+    },
+    {
+        "name": "HTML",
+        "icon": "/icons/logo_html.svg"
+    },
+    {
+        "name": "CSS",
+        "icon": "/icons/logo_css.svg"
+    },
+    {
+        "name": "JavaScript",
+        "icon": "/icons/logo_javascript.svg"
+    },
+    {
+        "name": "React",
+        "icon": "/icons/logo_react.svg"
+    },
+    {
+        "name": "Unity",
+        "icon": "/icons/logo_unity.svg"
+    },
+    {
+        "name": "Xcode",
+        "icon": "/icons/logo_xcode.svg"
+    },
+    {
+        "name": "Visual Studio Code",
+        "icon": "/icons/logo_vscode.svg"
+    },
+    {
+        "name": "Android Studio",
+        "icon": "/icons/logo_androidstudio.svg"
+    },
+        {
+        "name": "Git",
+        "icon": "/icons/logo_git.svg"
+    }
+]

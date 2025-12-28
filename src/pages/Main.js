@@ -1,4 +1,6 @@
 import "./Main.css"
+import Skills from "../components/Skills.js"
+import skills from "../components/skills.json"
 
 function Main() {
   return (
@@ -53,6 +55,15 @@ function Main() {
         </section>
         <section className="content-card skill-tools">
           <h2>Skill & Tools</h2>
+          <div className="skill-icon-grid">
+            {skills.map((skill) => (
+              <Skills
+                key={skill.name}
+                icon={skill.icon}
+                name={skill.name}
+              />
+            ))}            
+          </div>
         </section>
         <section className="content-card projects">
           <h2>Projects</h2>
