@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Nature Up",
+        "icon": "/icons/projects/logo_natureup.png",
+        "link": "https://github.com/DevMizeKR/NatureUp"
+    },
+    {
+        "name": "NearCatch",
+        "icon": "/icons/projects/logo_nearcatch.png",
+        "link": "https://github.com/DevMizeKR/MC2-Team13-NearCatch"
+    },
+    {
+        "name": "똑똑",
+        "icon": "/icons/projects/logo_knockknock.png",
+        "link": "https://github.com/DevMizeKR/MC3-Team5-KnockKnock"
+    },
+    {
+        "name": "배달런",
+        "icon": "/icons/projects/logo_deliveryrun.png",
+        "link": "https://github.com/DevMizeKR/MacC-Team-Compiler"
+    },
+    {
+        "name": "NearCat:ch Adventure",
+        "icon": "/icons/projects/logo_nearcatchadventure.png",
+        "link": "https://github.com/NearCat-ch/NearCatch-Adventure"
+    },
+    {
+        "name": "FLAVITY",
+        "icon": "/icons/projects/logo_flavity.png",
+        "link": "https://github.com/GPOS-Gamemakers-in-POSTECH/GPOS-2023-FLAVITY"
+    },
+    {
+        "name": "To The STAR",
+        "icon": "/icons/projects/logo_tothestar.png",
+        "link": "https://github.com/GPOS-Gamemakers-in-POSTECH/GPOS-2024-to_the_STAR"
+    },
+    {
+        "name": "Fishy Factory",
+        "icon": "/icons/projects/logo_fishyfactory.png",
+        "link": "https://github.com/GPOS-Gamemakers-in-POSTECH/GPOS-2024-Fishy_Factory"
+    },
+    {
+        "name": "JotThatSir",
+        "icon": "/icons/projects/logo_jotthatsir.png",
+        "link": "https://github.com/sumjingangcat/2024_STadium_Game_Jam"
+    }
+]
