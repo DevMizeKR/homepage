@@ -78,6 +78,11 @@
   margin-bottom: 10px;
 }
 
+.content-card.skill-tools {
+  display: flex;
+  flex-direction: column;
+}
+
 .content-block {
   padding: 10px;
   border-bottom: 1px solid var(--divider-color);
@@ -104,11 +109,15 @@
 }
 
 .skill-icon-grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   grid-template-columns: repeat(auto-fill, 40px);
   gap: 20px 10px;
   padding: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%
 }
 
 .projects,
