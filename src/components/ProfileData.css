@@ -1,0 +1,71 @@
+.skill-icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.skill-icon img {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.skill-tooltip {
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 4px 8px;
+    font-size: 12px;
+    white-space: nowrap;
+
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 4px;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.skill-icon:hover .skill-tooltip {
+    opacity: 1;
+}
+
+.project-icon {
+    position: relative;
+    display: inline-flex;
+    width: 100px;
+    height: 100px;
+}
+
+.project-icon img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.project-tooltip {
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 4px 8px;
+    font-size: 12px;
+    white-space: nowrap;
+
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 4px;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.project-icon:hover .project-tooltip {
+    opacity: 1;
+}

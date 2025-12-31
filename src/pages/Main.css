@@ -78,7 +78,7 @@
   margin-bottom: 10px;
 }
 
-.content-card.skill-tools {
+.content-card.content-skill-tools {
   display: flex;
   flex-direction: column;
 }
@@ -108,11 +108,15 @@
   justify-content: center;
 }
 
-.skill-icon-grid {
+.content-projects,
+.content-experiences {
+  grid-column: 1 / -1;
+}
+
+.grid-icon {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fill, 40px);
+  justify-content: space-evenly;
   gap: 20px 10px;
   padding: 10px;
   margin-top: auto;
@@ -120,7 +124,11 @@
   width: 100%
 }
 
-.projects,
-.experiences {
-  grid-column: 1 / -1;
+.grid-skill {
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 40px);
+}
+
+.grid-project {
+  grid-template-columns: repeat(auto-fill, 100px);
 }

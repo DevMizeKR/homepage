@@ -1,6 +1,7 @@
 import "./Main.css"
-import Skills from "../components/Skills.js"
+import { Skills, Projects } from "../components/ProfileData.js"
 import skills from "../components/skills.json"
+import projects from "../components/projects.json"
 
 function Main() {
   return (
@@ -29,7 +30,7 @@ function Main() {
         </div>
       </div>
       <div className="content-grid">
-        <section className="content-card main-work">
+        <section className="content-card content-main-work">
           <h2>Main Work</h2>
           <div className="content-block">
             <h4>
@@ -53,9 +54,9 @@ function Main() {
             <p>Finding & Utilizing Glitches, Especially in Classic Games</p>
           </div>
         </section>
-        <section className="content-card skill-tools">
+        <section className="content-card content-skill-tools">
           <h2>Skill & Tools</h2>
-          <div className="skill-icon-grid">
+          <div className="grid-icon grid-skill">
             {skills.map((skill) => (
               <Skills
                 key={skill.name}
@@ -65,10 +66,20 @@ function Main() {
             ))}            
           </div>
         </section>
-        <section className="content-card projects">
+        <section className="content-card content-projects">
           <h2>Projects</h2>
+          <div className="grid-icon grid-project">
+            {projects.map((project) => (
+              <Projects
+                key={project.name}
+                icon={project.icon}
+                name={project.name}
+                url={project.url}
+              />
+            ))}            
+          </div>
         </section>
-        <section className="content-card experiences">
+        <section className="content-card content-experiences">
           <h2>Experiences</h2>
         </section>
       </div>
