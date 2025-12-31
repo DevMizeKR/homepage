@@ -1,0 +1,119 @@
+[
+    {
+        "experience": "Daegu IL Science High School",
+        "subtitle": null,
+        "date-start": "2018.03",
+        "date-end": "2020.02",
+        "description": "Early Graduation",
+        "url": "https://dg1s.dge.hs.kr/",
+        "is-end": true
+    },
+    {
+        "experience": "POSTECH",
+        "subtitle": "B.S. in Computer Science",
+        "date-start": "2020.03",
+        "date-end": null,
+        "description": "Studied Mainly about Computer Network, Software Design, Ubiquitous Computing, ETC.",
+        "url": "http://postech.ac.kr/",
+        "is-end": false
+    },
+    {
+        "experience": "Apple Developer Academy @ POSTECH",
+        "subtitle": "1st Jr. Learner",
+        "date-start": "2022.03",
+        "date-end": "2022.12",
+        "description": "Planned & Developed iOS App Projects / Best Project Team in Graduate Showcase",
+        "url": "https://developeracademy.postech.ac.kr/",
+        "is-end": true
+    },
+    {
+        "experience": "MEGA GAME JAM 2022",
+        "subtitle": "#2 Best Excellence Award",
+        "date-start": "2022.10",
+        "date-end": null,
+        "description": "NearCat:ch Adventure, Casual Co-op Icebreaking iOS Game, Team NearCatch, Sub Programmer",
+        "url": "https://www.youtube.com/watch?v=E2cPZFIHGJM",
+        "is-end": true
+    },
+    {
+        "experience": "G-POS, POSTECH",
+        "subtitle": "Member",
+        "date-start": "2023.03",
+        "date-end": null,
+        "description": "Gamemakers in POSTECH",
+        "url": "https://gpos.postech.ac.kr/",
+        "is-end": false
+    },
+    {
+        "experience": "UNICON 2023",
+        "subtitle": "#3 Excellence Award",
+        "date-start": "2023.08",
+        "date-end": null,
+        "description": "FLAVITY, 3D Gravity-Reversing Platform Game, G-POS, Sub Programmer",
+        "url": null,
+        "is-end": true
+    },
+    {
+        "experience": "nears",
+        "subtitle": "Founding Member",
+        "date-start": "2023.10",
+        "date-end": "2023.12",
+        "description": "Developed Casual Co-op iOS Game 'NearCat:ch Adventure' using 'Nearby Interaction' Technology",
+        "url": "https://nearcat-ch.github.io/",
+        "is-end": true
+    },
+    {
+        "experience": "G-POS, POSTECH",
+        "subtitle": "President",
+        "date-start": "2023.12",
+        "date-end": "2024.08",
+        "description": "Gamemakers in POSTECH",
+        "url": "https://gpos.postech.ac.kr/",
+        "is-end": true
+    },
+    {
+        "experience": "UNIJAM 2024",
+        "subtitle": "Administrator",
+        "date-start": "2024.01",
+        "date-end": null,
+        "description": "Planned & Managed Game Jam as Operation Team",
+        "url": null,
+        "is-end": true
+    },
+    {
+        "experience": "2024 NDM Showcase",
+        "subtitle": "Exhibitor",
+        "date-start": "2024.02",
+        "date-end": null,
+        "description": "To The STAR, 2D Metrovania, G-POS, Map Designer & Sub Programmer",
+        "url": null,
+        "is-end": true
+    },
+    {
+        "experience": "KOG Games",
+        "subtitle": "Internship",
+        "date-start": "2024.06",
+        "date-end": "2024.08",
+        "description": "Researched about Rhythm Games & Developed Personal Project",
+        "url": "https://www.kog.co.kr/",
+        "is-end": true
+    },
+    {
+        "experience": "UNICON 2024",
+        "subtitle": "Exhibitor",
+        "date-start": "2024.08",
+        "date-end": null,
+        "description": "Fishy Factory, Management Simulation Game, G-POS, Main Programmer",
+        "url": null,
+        "is-end": true
+    },
+    {
+        "experience": "2024 STadium AI Game Jam",
+        "subtitle": "#1 Grand Prize",
+        "date-start": "2024.09",
+        "date-end": null,
+        "description": "JotThatSir, Casual Clicker Game, 희망(절망)편, Sub Programmer",
+        "url": null,
+        "is-end": true
+    }
+]
