@@ -1,7 +1,8 @@
 import "./Main.css"
-import { Skills, Projects } from "../components/ProfileData.js"
+import { Skills, Projects, Experiences } from "../components/ProfileData.js"
 import skills from "../components/skills.json"
 import projects from "../components/projects.json"
+import experiences from "../components/experiences.json"
 
 function Main() {
   return (
@@ -81,6 +82,20 @@ function Main() {
         </section>
         <section className="content-card content-experiences">
           <h2>Experiences</h2>
+          <div className="grid-experience">
+            {experiences.map((experience) => (
+              <Experiences
+                key={experience.name}
+                name={experience.name}
+                subtitle={experience.subtitle}
+                dateStart={experience.dateStart}
+                dateEnd={experience.dateEnd}
+                description={experience.description}
+                url={experience.url}
+                isEnd={experience.isEnd}
+              />
+            ))}
+          </div>
         </section>
       </div>
     </main>

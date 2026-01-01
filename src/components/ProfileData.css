@@ -69,3 +69,30 @@
 .project-icon:hover .project-tooltip {
     opacity: 1;
 }
+
+.experience-row {
+    display: grid;
+    grid-template-columns: 120px 1px 1fr;
+    column-gap: 20px;
+    align-items: start;
+}
+
+.experience-date {
+    color: black;
+    font-family: 'NexonKartGothic';
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.experience-divider {
+    align-self: stretch;
+    width: 1px;
+    background-color: var(--main-color);
+}
+
+.experience-name {
+    color: black;
+    font-family: 'NexonKartGothic';
+    font-weight: 700;
+    font-size: 25px;
+}
