@@ -11,9 +11,14 @@
   align-items: center;
   gap: 10px;
   padding: 20px;
+
   background-color: #7f00ff1A;
   border: 2px solid var(--main-color);
   border-radius: 5%;
+
+  position: sticky;
+  top: 40px;
+  transition: transform 0.2s ease-out;
 }
 
 .side-link {

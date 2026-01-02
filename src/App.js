@@ -17,6 +17,11 @@ function AppLayout() {
         <Route path="/" element={<Home />} />
         <Route path="/main" element={<Main />} />
       </Routes>
+      <footer>
+        {!isHome && 
+          <div className="copyright">© 2026 Mize. All rights reserved.</div>
+        }
+      </footer>
     </>
   );
 }
