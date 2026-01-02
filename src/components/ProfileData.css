@@ -110,7 +110,7 @@
 }
 
 .experience-subtitle {
-    color: black;
+    color: var(--description-color);
     font-family: 'NexonKartGothic';
     font-weight: 700;
     font-size: 20px;
@@ -145,4 +145,16 @@
     height: 1px;
     background-color: var(--main-color);
     margin-bottom: 10px;
+}
+
+.experience-1st-award {
+    color: gold;
+}
+
+.experience-2nd-award {
+    color: silver;
+}
+
+.experience-3rd-award {
+    color: chocolate;
 }

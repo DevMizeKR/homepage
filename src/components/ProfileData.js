@@ -34,7 +34,7 @@ export function Experiences({ name, subtitle, dateStart, dateEnd, description, u
             <div className="experience-divider" />
             <div className="experience-content">
                 <div className="experience-name">{name}</div>
-                <div className="experience-subtitle">{subtitle}</div>
+                <div className={`experience-subtitle ${setSubtitleColorClass(subtitle)}`}>{subtitle}</div>
             </div>
             {url && (
                 <a
@@ -68,4 +68,20 @@ function formatDateText(dateStart, dateEnd, isEnd) {
     else {
         return dateStart;
     }
+}
+
+const SUBTITLE_KEYWORD_STYLE = [
+    {keyword: "#1", className: "experience-1st-award"},
+    {keyword: "#2", className: "experience-2nd-award"},
+    {keyword: "#3", className: "experience-3rd-award"}
+];
+
+function setSubtitleColorClass(subtitle) {
+    if (!subtitle) return "";
+
+    const colorClass = SUBTITLE_KEYWORD_STYLE.find(({ keyword }) =>
+        subtitle.includes(keyword)
+    );
+
+    return colorClass ? colorClass.className : "";
 }
