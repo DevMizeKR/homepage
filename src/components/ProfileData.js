@@ -1,3 +1,4 @@
+import { FiExternalLink } from "react-icons/fi";
 import "./ProfileData.css";
 
 export function Skills({ icon, name }) {
@@ -35,6 +36,17 @@ export function Experiences({ name, subtitle, dateStart, dateEnd, description, u
                 <div className="experience-name">{name}</div>
                 <div className="experience-subtitle">{subtitle}</div>
             </div>
+            {url && (
+                <a
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="experience-url"
+                    aria-label="External Link"
+                >
+                    <FiExternalLink />
+                </a>
+            )}
             <div className="experience-description">{description}</div>
             <div className="experience-divider-bottom" />
         </div>
