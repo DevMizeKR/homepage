@@ -74,7 +74,7 @@
 .content-card h2 {
   font-family: 'NexonKartGothic';
   font-weight: 700;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -92,13 +92,13 @@
 .content-block h4 {
   font-family: 'NexonKartGothic';
   font-weight: 700;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .content-block p {
   font-family: 'NexonKartGothic';
   font-weight: 400;
-  font-size: 15px;
+  font-size: 20px;
   color: var(--description-color);
 }
 
@@ -127,7 +127,7 @@
 
 .grid-skill {
   justify-content: center;
-  grid-template-columns: repeat(auto-fill, 40px);
+  grid-template-columns: repeat(auto-fill, 50px);
 }
 
 .grid-project {

@@ -35,6 +35,8 @@ export function Experiences({ name, subtitle, dateStart, dateEnd, description, u
                 <div className="experience-name">{name}</div>
                 <div className="experience-subtitle">{subtitle}</div>
             </div>
+            <div className="experience-description">{description}</div>
+            <div className="experience-divider-bottom" />
         </div>
     );
 }

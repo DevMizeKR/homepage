@@ -1,12 +1,12 @@
 .skill-icon {
     position: relative;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 
 .skill-icon img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     display: block;
 }
 
@@ -81,7 +81,8 @@
     color: black;
     font-family: 'NexonKartGothic';
     font-weight: 700;
-    font-size: 15px;
+    font-size: 20px;
+    padding-left: 10px;
 }
 
 .experience-divider {
@@ -94,5 +95,29 @@
     color: black;
     font-family: 'NexonKartGothic';
     font-weight: 700;
-    font-size: 25px;
+    font-size: 30px;
+    margin-bottom: -5px;
+}
+
+.experience-subtitle {
+    color: black;
+    font-family: 'NexonKartGothic';
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.experience-description {
+    grid-column: 1 / -1;
+    font-family: 'NexonKartGothic';
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--description-color);
+    margin: 5px 10px
+}
+
+.experience-divider-bottom {
+    grid-column: 1 / -1;
+    height: 1px;
+    background-color: var(--main-color);
+    margin-bottom: 10px;
 }
