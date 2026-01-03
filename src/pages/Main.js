@@ -1,13 +1,40 @@
 import "./Main.css"
+import { useEffect, useRef } from "react";
 import { Skills, Projects, Experiences } from "../components/ProfileData.js"
 import skills from "../components/skills.json"
 import projects from "../components/projects.json"
 import experiences from "../components/experiences.json"
 
 function Main() {
+  const sideRef = useRef(null);
+
+  useEffect(() => {
+    let currentY = 0;
+    let targetY = 0;
+
+    const onScroll = () => {
+      targetY = window.scrollY;
+    };
+
+    const animate = () => {
+      currentY += (targetY - currentY) * 0.08;
+      if (sideRef.current) {
+        sideRef.current.style.transform = `translateY(${currentY}px)`;
+      }
+      requestAnimationFrame(animate);
+    };
+
+    window.addEventListener("scroll", onScroll);
+    animate();
+
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, []);
+
   return (
     <main className="main-main">
-      <div className="side-card">
+      <div className="side-card" ref={sideRef}>
         <img
           src="images/profile.jpg"
           alt="DevMizeKR"
