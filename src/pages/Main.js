@@ -9,6 +9,13 @@ function Main() {
   const sideRef = useRef(null);
 
   useEffect(() => {
+    const mq = window.matchMedia("(max-width: 768px)");
+
+    if (mq.matches) {
+      if (sideRef.current) {sideRef.current.style.transform = "none"; }
+      return;
+    }
+
     let currentY = 0;
     let targetY = 0;
 

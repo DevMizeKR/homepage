@@ -14,7 +14,7 @@
 
   background-color: #7f00ff1A;
   border: 2px solid var(--main-color);
-  border-radius: 5%;
+  border-radius: 16px;
 
   will-change: transform;
 }
@@ -32,7 +32,7 @@
   color: black;
   font-family: 'NexonKartGothic';
   font-weight: 700;
-  font-size: 50px;
+  font-size: var(--main-font);
   margin-top: -10px;
   margin-bottom: -20px;
 }
@@ -43,12 +43,12 @@
   color: black;
   font-family: 'NexonKartGothic';
   font-weight: 400;
-  font-size: 20px;
+  font-size: var(--description-font);
 }
 
 .side-image-profile {
-  width: 300px;
-  height: 300px;
+  width: var(--profile-image-size);
+  height: var(--profile-image-size);
   overflow: hidden;
   border: 2px solid black;
   border-radius: 100%;
@@ -69,7 +69,7 @@
 
 .content-card {
   background: none;
-  border-radius: 5%;
+  border-radius: 16px;
   padding: 10px 20px;
   gap: 10px;
 }
@@ -77,7 +77,7 @@
 .content-card h2 {
   font-family: 'NexonKartGothic';
   font-weight: 700;
-  font-size: 40px;
+  font-size: var(--title-font);
   text-align: center;
   margin-bottom: 10px;
 }
@@ -95,13 +95,13 @@
 .content-block h4 {
   font-family: 'NexonKartGothic';
   font-weight: 700;
-  font-size: 25px;
+  font-size: var(--subtitle-font);
 }
 
 .content-block p {
   font-family: 'NexonKartGothic';
-  font-weight: 400;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: var(--description-font);
   color: var(--description-color);
 }
 
@@ -135,4 +135,76 @@
 
 .grid-project {
   grid-template-columns: repeat(auto-fill, 100px);
+}
+
+
+@media (max-width: 1024px) {
+  .main-main {
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+    align-items: stretch;
+  }
+
+  .side-card {
+    position: static;
+    transform: none !important;
+    width: 100%;
+    border-radius: 16px;
+  }
+
+  .content-card {
+    padding: 16px;
+  }
+
+  .grid-icon {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .grid-skill,
+  .grid-project {
+    grid-template-columns: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-main {
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+    align-items: stretch;
+  }
+
+  .side-card {
+    position: static;
+    transform: none !important;
+    width: 100%;
+    border-radius: 16px;
+  }
+
+  .content-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .content-card {
+    padding: 16px;
+  }
+
+  .content-projects,
+  .content-experiences {
+    grid-column: auto;
+  }
+
+  .grid-icon {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .grid-skill,
+  .grid-project {
+    grid-template-columns: none;
+  }
 }
