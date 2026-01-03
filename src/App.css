@@ -2,6 +2,8 @@
   --main-color: #7F00FF;
   --divider-color: #BBBBBB;
   --description-color: #777777;
+  --badge-ongoing-color: #15803D;
+  --badge-background-color: #F3F4F6;
 }
 
 * {

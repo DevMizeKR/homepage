@@ -1,5 +1,14 @@
 [
     {
+        "name": "Republic of Korean Army",
+        "subtitle": "Corporal",
+        "dateStart": "2025.02",
+        "dateEnd": null,
+        "description": "Signaller, Network Operation/Maintenance(175.101) Specialty",
+        "url": null,
+        "isEnd": false
+    },
+    {
         "name": "2024 STadium AI Game Jam",
         "subtitle": "#1 Grand Prize",
         "dateStart": "2024.09",

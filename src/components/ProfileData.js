@@ -33,7 +33,14 @@ export function Experiences({ name, subtitle, dateStart, dateEnd, description, u
             </div>
             <div className="experience-divider" />
             <div className="experience-content">
-                <div className="experience-name">{name}</div>
+                <div className="experience-name">
+                    {name}
+                    {!isEnd && (
+                        <span className="badge-ongoing">
+                            ✔ Active
+                        </span>
+                    )}
+                </div>
                 <div className={`experience-subtitle ${setSubtitleColorClass(subtitle)}`}>{subtitle}</div>
             </div>
             {url && (
