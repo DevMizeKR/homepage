@@ -29,7 +29,7 @@
 .side-text-profile {
   background: none;
   border: none;
-  color: black;
+  color: var(--text-main-color);
   font-family: 'NexonKartGothic';
   font-weight: 700;
   font-size: var(--main-font);
@@ -40,7 +40,7 @@
 .side-text-description {
   background: none;
   border: none;
-  color: black;
+  color: var(--text-main-color);
   font-family: 'NexonKartGothic';
   font-weight: 400;
   font-size: var(--description-font);
@@ -50,7 +50,7 @@
   width: var(--profile-image-size);
   height: var(--profile-image-size);
   overflow: hidden;
-  border: 2px solid black;
+  border: 2px solid var(--text-main-color);
   border-radius: 100%;
 }
 
@@ -78,6 +78,7 @@
   font-family: 'NexonKartGothic';
   font-weight: 700;
   font-size: var(--title-font);
+  color: var(--text-main-color);
   text-align: center;
   margin-bottom: 10px;
 }
@@ -96,6 +97,7 @@
   font-family: 'NexonKartGothic';
   font-weight: 700;
   font-size: var(--subtitle-font);
+  color: var(--text-main-color);
 }
 
 .content-block p {

@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: white;
+  background: var(--background-main-color);
   width: 100%;
   display: flex;
   text-align: center;
@@ -35,7 +35,7 @@
 .nav-text {
   background: none;
   border: none;
-  color: black;
+  color: var(--text-main-color);
   font-family: 'NexonKartGothic';
   font-weight: bold;
   font-size: 30px;
@@ -69,7 +69,7 @@
 .nav-right a {
   display: flex;
   font-size: 40px;
-  color: black;
+  color: var(--text-main-color);
   transition: color 0.2s ease;
 }
 

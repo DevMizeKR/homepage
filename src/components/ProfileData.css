@@ -80,7 +80,7 @@
 .experience-date {
     grid-column: 1;
     grid-row: 1;
-    color: black;
+    color: var(--text-main-color);
     font-family: 'NexonKartGothic';
     font-weight: 700;
     font-size: var(--description-font);
@@ -101,7 +101,7 @@
 }
 
 .experience-name {
-    color: black;
+    color: var(--text-main-color);
     font-family: 'NexonKartGothic';
     font-weight: 700;
     font-size: var(--subtitle-font);
@@ -171,4 +171,31 @@
 
     vertical-align: middle;
     white-space: nowrap;
+}
+
+
+@media (max-width: 1024px) {
+    .badge-ongoing {
+        margin-left: 8px;
+        padding: 2px 8px;
+        border-radius: 6px;
+
+        font-size: 0.7rem;
+        font-weight: 700;
+        color: var(--badge-ongoing-color);
+        background-color: var(--badge-background-color);
+
+        vertical-align: middle;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .experience-url {
+        grid-column: 3;
+        grid-row: 1;
+        align-self: start;
+        justify-self: end;
+        padding-right: 10px;
+    }
 }
