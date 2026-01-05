@@ -1,0 +1,241 @@
+.main-main {
+  display: flex;
+  width: 80%;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.side-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+
+  background-color: #7f00ff1A;
+  border: 2px solid var(--main-color);
+  border-radius: 16px;
+
+  will-change: transform;
+}
+
+.side-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.side-link a {
+  display: flex;
+  font-size: 40px;
+  transition: color 0.2s ease;
+}
+
+.icon-instagram {
+  color: #e1306c;
+}
+
+.icon-linkedin {
+  color: #08529B;
+}
+
+.icon-github {
+  color: black;
+}
+
+.icon-mail {
+  color: #AAAAAA;
+}
+
+.icon-instagram:hover,
+.icon-linkedin:hover,
+.icon-github:hover,
+.icon-mail:hover {
+  color: var(--main-color);
+}
+
+.side-text-profile {
+  background: none;
+  border: none;
+  color: var(--text-main-color);
+  font-family: 'NexonKartGothic';
+  font-weight: 700;
+  font-size: var(--main-font);
+  margin-top: -10px;
+  margin-bottom: -20px;
+}
+
+.side-text-description {
+  background: none;
+  border: none;
+  color: var(--text-main-color);
+  font-family: 'NexonKartGothic';
+  font-weight: 400;
+  font-size: var(--description-font);
+}
+
+.side-image-profile {
+  width: var(--profile-image-size);
+  height: var(--profile-image-size);
+  overflow: hidden;
+  border: 2px solid var(--text-main-color);
+  border-radius: 100%;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  flex: 1;
+}
+
+.content-card {
+  background: none;
+  border-radius: 16px;
+  padding: 10px 20px;
+  gap: 10px;
+}
+
+.content-card h2 {
+  font-family: 'NexonKartGothic';
+  font-weight: 700;
+  font-size: var(--title-font);
+  color: var(--text-main-color);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content-card.content-skill-tools {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-block {
+  padding: 10px;
+  border-bottom: 1px solid var(--main-color);
+}
+
+.content-block h4 {
+  font-family: 'NexonKartGothic';
+  font-weight: 700;
+  font-size: var(--subtitle-font);
+  color: var(--text-main-color);
+}
+
+.content-block p {
+  font-family: 'NexonKartGothic';
+  font-weight: 500;
+  font-size: var(--description-font);
+  color: var(--description-color);
+}
+
+.content-block .emoji {
+  width: 32px;
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.content-projects,
+.content-experiences {
+  grid-column: 1 / -1;
+}
+
+.grid-icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px 10px;
+  padding: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%
+}
+
+.grid-skill {
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 50px);
+}
+
+.grid-project {
+  grid-template-columns: repeat(auto-fill, 100px);
+}
+
+
+@media (max-width: 1024px) {
+  .main-main {
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+    align-items: stretch;
+  }
+
+  .side-card {
+    position: static;
+    transform: none !important;
+    width: 100%;
+    border-radius: 16px;
+  }
+
+  .content-card {
+    padding: 16px;
+  }
+
+  .grid-icon {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .grid-skill,
+  .grid-project {
+    grid-template-columns: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-main {
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+    align-items: stretch;
+  }
+
+  .side-card {
+    position: static;
+    transform: none !important;
+    width: 100%;
+    border-radius: 16px;
+  }
+
+  .content-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .content-card {
+    padding: 16px;
+  }
+
+  .content-projects,
+  .content-experiences {
+    grid-column: auto;
+  }
+
+  .grid-icon {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .grid-skill,
+  .grid-project {
+    grid-template-columns: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .icon-github {
+    color: white;
+  }
+}

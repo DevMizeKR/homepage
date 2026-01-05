@@ -1,0 +1,72 @@
+[
+    {
+        "name": "C",
+        "icon": "/icons/skills/logo_c.svg",
+        "iconDark": null
+    },
+    {
+        "name": "C++",
+        "icon": "/icons/skills/logo_cpp.svg",
+        "iconDark": null
+    },
+    {
+        "name": "Python",
+        "icon": "/icons/skills/logo_python.svg",
+        "iconDark": null
+    },
+    {
+        "name": "Swift",
+        "icon": "/icons/skills/logo_swift.svg",
+        "iconDark": null
+    },
+    {
+        "name": "Kotlin",
+        "icon": "/icons/skills/logo_kotlin.svg",
+        "iconDark": null
+    },
+    {
+        "name": "HTML",
+        "icon": "/icons/skills/logo_html.svg",
+        "iconDark": null
+    },
+    {
+        "name": "CSS",
+        "icon": "/icons/skills/logo_css.svg",
+        "iconDark": null
+    },
+    {
+        "name": "JavaScript",
+        "icon": "/icons/skills/logo_javascript.svg",
+        "iconDark": null
+    },
+    {
+        "name": "React",
+        "icon": "/icons/skills/logo_react.svg",
+        "iconDark": null
+    },
+    {
+        "name": "Unity",
+        "icon": "/icons/skills/logo_unity.svg",
+        "iconDark": "/icons/skills/logo_unity_dark.svg"
+    },
+    {
+        "name": "Xcode",
+        "icon": "/icons/skills/logo_xcode.svg",
+        "iconDark": null
+    },
+    {
+        "name": "Visual Studio Code",
+        "icon": "/icons/skills/logo_vscode.svg",
+        "iconDark": null
+    },
+    {
+        "name": "Android Studio",
+        "icon": "/icons/skills/logo_androidstudio.svg",
+        "iconDark": null
+    },
+        {
+        "name": "Git",
+        "icon": "/icons/skills/logo_git.svg",
+        "iconDark": null
+    }
+]

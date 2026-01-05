@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Nature Up",
+        "icon": "/icons/projects/logo_natureup.png",
+        "url": "https://github.com/DevMizeKR/NatureUp",
+        "group": "Apple Developer Academy @ POSTECH"
+    },
+    {
+        "name": "NearCatch",
+        "icon": "/icons/projects/logo_nearcatch.png",
+        "url": "https://github.com/DevMizeKR/MC2-Team13-NearCatch",
+        "group": "Apple Developer Academy @ POSTECH"
+    },
+    {
+        "name": "똑똑",
+        "icon": "/icons/projects/logo_knockknock.png",
+        "url": "https://github.com/DevMizeKR/MC3-Team5-KnockKnock",
+        "group": "Apple Developer Academy @ POSTECH"
+    },
+    {
+        "name": "배달런",
+        "icon": "/icons/projects/logo_deliveryrun.png",
+        "url": "https://github.com/DevMizeKR/MacC-Team-Compiler",
+        "group": "Apple Developer Academy @ POSTECH"
+    },
+    {
+        "name": "NearCat:ch Adventure",
+        "icon": "/icons/projects/logo_nearcatchadventure.png",
+        "url": "https://github.com/NearCat-ch/NearCatch-Adventure",
+        "group": "nears Inc."
+    },
+    {
+        "name": "FLAVITY",
+        "icon": "/icons/projects/logo_flavity.png",
+        "url": "https://github.com/GPOS-Gamemakers-in-POSTECH/GPOS-2023-FLAVITY",
+        "group": "G-POS"
+    },
+    {
+        "name": "To The STAR",
+        "icon": "/icons/projects/logo_tothestar.png",
+        "url": "https://github.com/GPOS-Gamemakers-in-POSTECH/GPOS-2024-to_the_STAR",
+        "group": "G-POS"
+    },
+    {
+        "name": "Fishy Factory",
+        "icon": "/icons/projects/logo_fishyfactory.png",
+        "url": "https://github.com/GPOS-Gamemakers-in-POSTECH/GPOS-2024-Fishy_Factory",
+        "group": "G-POS"
+    },
+    {
+        "name": "JotThatSir",
+        "icon": "/icons/projects/logo_jotthatsir.png",
+        "url": "https://github.com/sumjingangcat/2024_STadium_Game_Jam",
+        "group": "G-POS"
+    }
+]
