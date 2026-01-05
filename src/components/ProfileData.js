@@ -28,19 +28,12 @@ export function Projects({ icon, name, url }) {
 export function Experiences({ name, subtitle, dateStart, dateEnd, description, url, isEnd }) {
     return (
         <div className="experience-row">
-            <div className="experience-date">
+            <div className={`experience-date ${!isEnd ? "text-active" : ""}`}>
                 {formatDateText(dateStart, dateEnd, isEnd)}
             </div>
             <div className="experience-divider" />
             <div className="experience-content">
-                <div className="experience-name">
-                    {name}
-                    {!isEnd && (
-                        <span className="badge-ongoing">
-                            ✔ Active
-                        </span>
-                    )}
-                </div>
+                <div className="experience-name">{name}</div>
                 <div className={`experience-subtitle ${setSubtitleColorClass(subtitle)}`}>{subtitle}</div>
             </div>
             {url && (

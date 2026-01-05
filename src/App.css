@@ -1,12 +1,11 @@
 :root {
   --main-color: #7F00FF;
-  --divider-color: #BBBBBB;
   --description-color: #777777;
-  --badge-ongoing-color: #15803D;
   --badge-background-color: #F3F4F6;
 
   --background-main-color: #ffffff;
   --text-main-color: #000000;
+  --text-active-color: #15803D;
 
   --main-font: 50px;  
   --title-font: 40px;
@@ -80,13 +79,12 @@ main {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --main-color: #7F00FF;
-    --divider-color: #BBBBBB;
+    --main-color: #9B6CFF;
     --description-color: #BBBBBB;
-    --badge-ongoing-color: #4ab973;
     --badge-background-color: #F3F4F6;
 
     --background-main-color: #000000;
     --text-main-color: #ffffff;
+    --text-active-color: #4ab973;
   }
 }

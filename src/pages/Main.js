@@ -1,5 +1,6 @@
 import "./Main.css"
 import { useEffect, useRef } from "react";
+import { FaInstagram, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { Skills, Projects, Experiences } from "../components/ProfileData.js"
 import skills from "../components/skills.json"
 import projects from "../components/projects.json"
@@ -51,16 +52,16 @@ function Main() {
         <p className="side-text-description">Game Developer @ KR</p>
         <div className="side-link">
           <a href="https://www.instagram.com/hwang_c_k_/" target="_blank" rel="noopener noreferrer">
-            <img src="/icons/sns/logo_instagram.svg" alt="Instagram" className="side-image-link" />
+            <FaInstagram className="icon-instagram" />
           </a>
           <a href="https://www.linkedin.com/in/%EC%B0%AC%EA%B8%B0-%ED%99%A9-6a75062ba/" target="_blank" rel="noopener noreferrer">
-            <img src="/icons/sns/logo_linkedin.svg" alt="LinkedIn" className="side-image-link" />
+            <FaLinkedin className="icon-linkedin" />
           </a>
           <a href="https://github.com/DevMizeKR" target="_blank" rel="noopener noreferrer">
-            <img src="/icons/sns/logo_github.svg" alt="GitHub" className="side-image-link" />
+            <FaGithub className="icon-github" />
           </a>
           <a href="mailto:hwangck0827@gmail.com" target="_blank" rel="noopener noreferrer">
-            <img src="/icons/sns/logo_gmail.svg" alt="Gmail" className="side-image-link" />
+            <FaEnvelope className="icon-mail" />
           </a>
         </div>
       </div>

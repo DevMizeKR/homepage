@@ -26,6 +26,35 @@
   gap: 10px;
 }
 
+.side-link a {
+  display: flex;
+  font-size: 40px;
+  transition: color 0.2s ease;
+}
+
+.icon-instagram {
+  color: #e1306c;
+}
+
+.icon-linkedin {
+  color: #08529B;
+}
+
+.icon-github {
+  color: black;
+}
+
+.icon-mail {
+  color: #AAAAAA;
+}
+
+.icon-instagram:hover,
+.icon-linkedin:hover,
+.icon-github:hover,
+.icon-mail:hover {
+  color: var(--main-color);
+}
+
 .side-text-profile {
   background: none;
   border: none;
@@ -52,12 +81,6 @@
   overflow: hidden;
   border: 2px solid var(--text-main-color);
   border-radius: 100%;
-}
-
-.side-image-link {
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
 }
 
 .content-grid {
@@ -90,7 +113,7 @@
 
 .content-block {
   padding: 10px;
-  border-bottom: 1px solid var(--divider-color);
+  border-bottom: 1px solid var(--main-color);
 }
 
 .content-block h4 {
@@ -208,5 +231,11 @@
   .grid-skill,
   .grid-project {
     grid-template-columns: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .icon-github {
+    color: white;
   }
 }
