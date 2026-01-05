@@ -1,10 +1,13 @@
 import { FiExternalLink } from "react-icons/fi";
+import { useEffect, useState } from "react";
 import "./ProfileData.css";
 
-export function Skills({ icon, name }) {
+export function Skills({ icon, iconDark, name }) {
+    const isDark = usePrefersDarkMode();
+
     return (
         <div className="skill-icon">
-            <img src={icon} alt={name} />
+            <img src={isDark && iconDark ? iconDark : icon} alt={name} />
             <span className="skill-tooltip">{name}</span>
         </div>
     );
@@ -53,6 +56,7 @@ export function Experiences({ name, subtitle, dateStart, dateEnd, description, u
     );
 }
 
+// Set Format of Date Text
 function formatDateText(dateStart, dateEnd, isEnd) {
     if (dateEnd) {
         return (
@@ -76,6 +80,7 @@ const SUBTITLE_KEYWORD_STYLE = [
     {keyword: "#3", className: "experience-3rd-award"}
 ];
 
+// Set Color of Experience Subtitle
 function setSubtitleColorClass(subtitle) {
     if (!subtitle) return "";
 
@@ -84,4 +89,21 @@ function setSubtitleColorClass(subtitle) {
     );
 
     return colorClass ? colorClass.className : "";
+}
+
+// Detect Dark Mode
+function usePrefersDarkMode() {
+    const [isDark, setIsDark] = useState (
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+    );
+
+    useEffect(() => {
+        const media = window.matchMedia("(prefers-color-scheme: dark)");
+        const handler = (e) => setIsDark(e.matches);
+
+        media.addEventListener("change", handler);
+        return () => media.removeEventListener("change", handler);
+    }, []);
+
+    return isDark;
 }

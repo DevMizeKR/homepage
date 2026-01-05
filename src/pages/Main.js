@@ -97,6 +97,7 @@ function Main() {
               <Skills
                 key={skill.name}
                 icon={skill.icon}
+                iconDark={skill.iconDark}
                 name={skill.name}
               />
             ))}            
