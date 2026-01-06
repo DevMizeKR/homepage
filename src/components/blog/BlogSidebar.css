@@ -1,0 +1,27 @@
+.blog-sidebar {
+    position: sticky;
+    top: 40px;
+    align-self: start;
+    border: 2px solid var(--main-color);
+    border-radius: 16px;
+    padding: 10px 20px;
+}
+
+.blog-sidebar h2 {
+    font-size: 20px;
+}
+
+.blog-sidebar ul {
+    list-style: none;
+}
+
+.blog-sidebar a {
+    font-weight: 500;
+    color: var(--text-main-color);
+    text-decoration: none;
+}
+
+.blog-sidebar a.active {
+    font-weight: 700;
+    color: var(--main-color);
+}

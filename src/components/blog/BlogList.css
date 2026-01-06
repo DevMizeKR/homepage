@@ -1,0 +1,21 @@
+.blog-item {
+    padding: 20px;
+    border-bottom: 1px solid var(--divider-color);
+    cursor: pointer;
+}
+
+.blog-item h3 {
+    font-size: var(--subtitle-font);
+    color: var(--text-main-color);
+    margin-bottom: 4px;
+}
+
+.blog-meta {
+    font-size: 14px;
+    color: var(--description-color);
+}
+
+.blog-summary {
+    margin-top: 8px;
+    color: var(--description-color);
+}

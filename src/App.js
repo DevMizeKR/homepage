@@ -17,7 +17,7 @@ function AppLayout() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/main" element={<Main />} />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/*" element={<Blog />} />
       </Routes>
       <footer>
         {!isHome && 
