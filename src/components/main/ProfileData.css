@@ -109,8 +109,6 @@
     font-family: 'NexonKartGothic';
     font-weight: 700;
     font-size: var(--subtitle-font);
-    margin-top: -5px;
-    margin-bottom: -5px;
 }
 
 .experience-subtitle {

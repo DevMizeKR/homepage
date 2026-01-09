@@ -1,13 +1,14 @@
 import "./BlogList.css";
-import { getAllPosts } from "../../lib/posts";
+import { usePosts } from "./usePosts.js";
 import { Link, useParams } from "react-router-dom";
 
 export default function BlogList() {
     const { category } = useParams();
-    const posts = getAllPosts();
-
+    const { posts, loading } = usePosts();
     const filtered = category ? posts.filter(p => p.category === category) : posts;
 
+    if (loading) return <p>불러오는 중...</p>
+    
     return (
         <div className="blog-list">
             {filtered.map(post => (

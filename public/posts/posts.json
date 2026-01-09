@@ -1,0 +1,9 @@
+[
+    {
+        "id": "test-post",
+        "title": "Test Post",
+        "date": "2026.01.08",
+        "category": "daily",
+        "summary": "Post For Test"
+    }
+]

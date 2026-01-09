@@ -11,7 +11,7 @@ export default function BlogSidebar() {
     return (
         <aside className="blog-sidebar">
             <h2>Categories</h2>
-            <ul>
+            <ul className="category-list">
                 {categories.map(({label, slug}) => {
                     const isAll = slug === "all";
                     const path = isAll ? "/blog" : `/blog/${slug}`;
@@ -21,7 +21,7 @@ export default function BlogSidebar() {
                             <NavLink
                                 to={path}
                                 end={isAll}
-                                className={({ isActive }) => isActive ? "active" : ""}
+                                className={({ isActive }) => `category-item ${isActive ? "active" : ""}`}
                             >
                                 {label}
                             </NavLink>

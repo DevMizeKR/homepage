@@ -62,8 +62,6 @@
   font-family: 'NexonKartGothic';
   font-weight: 700;
   font-size: var(--main-font);
-  margin-top: -10px;
-  margin-bottom: -20px;
 }
 
 .side-text-description {
