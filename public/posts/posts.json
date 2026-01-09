@@ -4,6 +4,15 @@
         "title": "Test Post",
         "date": "2026.01.08",
         "category": "daily",
-        "summary": "Post For Test"
+        "summary": "Post For Test",
+        "thumbnail": ""
+    },
+    {
+        "id": "test-post-2",
+        "title": "Test Post 2",
+        "date": "2026.01.08",
+        "category": "project",
+        "summary": "Post For Test 2",
+        "thumbnail": ""
     }
 ]

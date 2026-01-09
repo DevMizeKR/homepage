@@ -10,16 +10,21 @@ export default function BlogList() {
     if (loading) return <p>불러오는 중...</p>
     
     return (
-        <div className="blog-list">
+        <div className="post-list">
             {filtered.map(post => (
                 <Link
                     key={post.slug}
                     to={`/blog/post/${post.slug}`}
-                    className="blog-item"
+                    className="post-item"
                 >
-                    <h3>{post.title}</h3>
-                    <p className="blog-meta">{post.date} / {post.category}</p>
-                    <p className="blog-summary">{post.summary}</p>
+                    <div className="post-thumbnail">
+                        <img src={post.thumbnail} alt="" />
+                    </div>
+                    <div className="post-info">
+                        <h3 className="post-title">{post.title}</h3>
+                        <p className="post-meta">{post.date} / {post.category}</p>
+                        <p className="post-summary">{post.summary}</p>
+                    </div>
                 </Link>
             ))}
         </div>

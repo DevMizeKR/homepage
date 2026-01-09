@@ -2,26 +2,12 @@
     position: sticky;
     top: 40px;
     align-self: start;
-    padding: 10px 20px;
+    padding: 10px;
 }
 
 .blog-sidebar h2 {
-    font-size: 20px;
-}
-
-.blog-sidebar ul {
-    list-style: none;
-}
-
-.blog-sidebar a {
-    font-weight: 500;
+    font-size: var(--description-font);
     color: var(--text-main-color);
-    text-decoration: none;
-}
-
-.blog-sidebar a.active {
-    font-weight: 700;
-    color: var(--main-color);
 }
 
 .category-list {
@@ -32,11 +18,11 @@
 
 .category-item {
     display: block;
-    padding: 10px;
+    padding: 5px 10px;
     border-radius: 6px;
     text-decoration: none;
-    color: var(--text-color);
-    border: 1px solid transparent;
+    color: var(--text-main-color);
+    border: 2px solid transparent;
     transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 }
 
