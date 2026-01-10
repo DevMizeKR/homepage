@@ -8,7 +8,7 @@
     gap: 10px;
     padding: 20px;
     border-radius: 12px;
-    border-bottom: 1px solid var(--description-color);
+    border-bottom: 1px solid var(--main-color);
     text-decoration: none;
     color: inherit;
     cursor: pointer;
@@ -26,10 +26,10 @@
 }
 
 .post-thumbnail {
-    width: 96px;
-    height: 96px;
+    width: 100px;
+    height: 100px;
     flex-shrink: 0;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
     background-color: var(--description-color);
 }

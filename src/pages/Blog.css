@@ -1,7 +1,13 @@
 .blog-layout {
     display: grid;
-    grid-template-columns: 240px 1fr;
+    grid-template-columns: clamp(180px, 20vw, 240px) 1fr;
     gap: 30px;
     width: 80%;
     padding: 40px 20px;
+}
+
+@media (max-width: 768px) {
+    .blog-layout {
+        grid-template-columns: 1fr;
+    }
 }
