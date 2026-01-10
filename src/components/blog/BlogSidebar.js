@@ -1,11 +1,6 @@
 import "./BlogSidebar.css";
 import { NavLink } from "react-router-dom";
-
-const categories = [
-    {label: "All", slug: "all"},
-    {label: "Daily", slug: "daily"},
-    {label: "Project", slug: "project"}
-];
+import { categories } from "./categories.js";
 
 export default function BlogSidebar() {
     return (
