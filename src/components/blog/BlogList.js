@@ -13,8 +13,8 @@ export default function BlogList() {
         <div className="post-list">
             {filtered.map(post => (
                 <Link
-                    key={post.slug}
-                    to={`/blog/post/${post.slug}`}
+                    key={post.id}
+                    to={`/blog/post/${post.id}`}
                     className="post-item"
                 >
                     <div className="post-thumbnail">

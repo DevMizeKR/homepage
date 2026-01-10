@@ -1,5 +1,6 @@
 import "./BlogContent.css";
-import BlogList from "./BlogList";
+import BlogList from "./BlogList.js";
+import BlogPost from "./BlogPost.js"
 import { Routes, Route } from "react-router-dom";
 
 
@@ -9,7 +10,7 @@ export default function BlogContent() {
             <Routes>
                 <Route path="/" element={<BlogList />} />
                 <Route path=":category" element={<BlogList />} />
-                <Route path="post/:id" element={<BlogList />} />
+                <Route path="post/:postId" element={<BlogPost />} />
             </Routes>
         </section>
     );

@@ -2,9 +2,9 @@ import "./Main.css"
 import { useEffect, useRef } from "react";
 import { FaInstagram, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { Skills, Projects, Experiences } from "../components/main/ProfileData.js"
-import skills from "../components/main/skills.json"
-import projects from "../components/main/projects.json"
-import experiences from "../components/main/experiences.json"
+import skills from "../data/skills.json"
+import projects from "../data/projects.json"
+import experiences from "../data/experiences.json"
 
 function Main() {
   const sideRef = useRef(null);
