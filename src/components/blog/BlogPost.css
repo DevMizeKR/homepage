@@ -1,6 +1,11 @@
+.post-header h1 {
+    color: var(--text-main-color);
+}
+
 .post-body {
     line-height: 1.8;
     font-size: 17px;
+    color: var(--text-main-color);
 }
 
 .post-body h2 {

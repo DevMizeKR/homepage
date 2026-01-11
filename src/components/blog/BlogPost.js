@@ -1,6 +1,8 @@
+import "./BlogPost.css";
 import { useParams } from "react-router-dom";
 import posts from "../../data/posts.json";
 import PostBody from "./PostBody.js";
+import { capitalize } from "../../utils/text.js";
 
 export default function BlogPost() {
     const { postId } = useParams();
@@ -13,16 +15,9 @@ export default function BlogPost() {
             <header className="post-header">
                 <h1>{post.title}</h1>
                 <p className="post-meta">
-                {post.date} · {post.category}
+                {post.date} · {capitalize(post.category)}
                 </p>
             </header>
-            {post.thumbnail && (
-                <img
-                src={post.thumbnail}
-                alt={post.title}
-                className="post-thumbnail"
-                />
-            )}
             <PostBody markdownFile={`${post.id}.md`} />
         </article>
     );

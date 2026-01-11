@@ -1,6 +1,7 @@
 import "./BlogList.css";
 import { usePosts } from "./usePosts.js";
 import { Link, useParams } from "react-router-dom";
+import { capitalize } from "../../utils/text.js";
 
 export default function BlogList() {
     const { category } = useParams();
@@ -22,7 +23,7 @@ export default function BlogList() {
                     </div>
                     <div className="post-info">
                         <h3 className="post-title">{post.title}</h3>
-                        <p className="post-meta">{post.date} / {post.category}</p>
+                        <p className="post-meta">{post.date} / {capitalize(post.category)}</p>
                         <p className="post-summary">{post.summary}</p>
                     </div>
                 </Link>

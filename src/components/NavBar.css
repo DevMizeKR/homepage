@@ -76,3 +76,9 @@
 .nav-right a:hover {
   color: var(--main-color);
 }
+
+@media (max-width: 768px) {
+  .nav-right {
+    display: none;
+  }
+}
