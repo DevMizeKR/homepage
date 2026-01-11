@@ -22,7 +22,7 @@ export default function BlogList() {
                         <img src={post.thumbnail} alt="" />
                     </div>
                     <div className="post-info">
-                        <h3 className="post-title">{post.title}</h3>
+                        <h3 className="post-title" title={post.title}>{post.title}</h3>
                         <p className="post-meta">{post.date} / {capitalize(post.category)}</p>
                         <p className="post-summary">{post.summary}</p>
                     </div>

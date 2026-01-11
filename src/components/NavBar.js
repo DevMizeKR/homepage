@@ -45,7 +45,7 @@ function NavBar() {
                 <img
                     className="nav-image-profile"
                     alt="DevMizeKR"
-                    src="images/profile.jpg"
+                    src="media/profile.jpg"
                     onClick={() => navigate("/")}
                 />
                 <div className="nav-link" ref={containerRef}>

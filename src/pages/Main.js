@@ -44,7 +44,7 @@ function Main() {
     <main className="main-main">
       <div className="side-card" ref={sideRef}>
         <img
-          src="images/profile.jpg"
+          src="media/profile.jpg"
           alt="DevMizeKR"
           className="side-image-profile"
         />

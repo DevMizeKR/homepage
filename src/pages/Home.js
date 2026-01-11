@@ -9,7 +9,7 @@ function Home() {
             <img
                 className="home-image-profile"
                 alt="DevMizeKR"
-                src="images/profile.jpg"
+                src="media/profile.jpg"
                 onClick={() => navigate("/main")}
             />
         </div>
