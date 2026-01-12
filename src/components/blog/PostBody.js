@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 
 export default function PostBody({ markdownFile }){
     const [content, setContent] = useState("");
@@ -12,7 +13,7 @@ export default function PostBody({ markdownFile }){
 
     return (
         <div className="post-body">
-            <ReactMarkdown>{content}</ReactMarkdown>
+            <ReactMarkdown rehypePlugins={rehypeRaw}>{content}</ReactMarkdown>
         </div>
     );
 }
