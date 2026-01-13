@@ -9,5 +9,6 @@
 @media (max-width: 768px) {
     .blog-layout {
         grid-template-columns: 1fr;
+        width: 100%;
     }
 }
