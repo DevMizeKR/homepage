@@ -31,17 +31,15 @@
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 24px auto;
+    margin: 5px auto;
 }
 
 .post-body figure {
-  margin: 1.5rem 0;
   text-align: center;
 }
 
 .post-body figcaption {
-  margin-top: 0.5rem;
-  font-size: 0.875rem;
+  font-size: var(--information-font);
   color: var(--description-color);
 }
 
