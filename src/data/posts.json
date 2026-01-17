@@ -1,11 +1,27 @@
 [
+            {
+        "id": "2024-05-10_POSTECH",
+        "title": "학교 축제 부스 운영기",
+        "date": "2024.05.10",
+        "category": "daily",
+        "summary": "그래서 초록 옷 입은 애가 젤다죠?",
+        "thumbnail": "/media/post/2024-05-10_POSTECH/2024-05-10_POSTECH.jpg"
+    },
+        {
+        "id": "2024-04-01_POSTECH",
+        "title": "April Fools' Geeks",
+        "date": "2024.04.01",
+        "category": "daily",
+        "summary": "공대생으로써 그냥 넘어갈 수는 없는 날",
+        "thumbnail": "/media/post/2024-04-01_POSTECH/2024-04-01_POSTECH.jpg"
+    },
     {
         "id": "2024-02-20_NEXON",
         "title": "2024 NDM 게임제작발표회",
         "date": "2024.02.20",
         "category": "daily",
         "summary": "우당탕탕 넥슨 사옥 점령기",
-        "thumbnail": ""
+        "thumbnail": "/media/post/2024-02-20_NEXON/2024-02-20_NEXON.jpg"
     },
     {
         "id": "2024-01-28_UNIJAM",

@@ -43,6 +43,18 @@
   color: var(--description-color);
 }
 
+.post-body blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid var(--main-color);
+  background: var(--quote-background-color);
+  color: var(--text-main-color);
+}
+
+.post-body blockquote p {
+    margin: 0;
+}
+
 .md-image-row {
     display: flex;
     gap: 1rem;

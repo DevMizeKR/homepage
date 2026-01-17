@@ -2,7 +2,7 @@
   --main-color: #7F00FF;
   --main-color-rgb: rgb(127, 0, 255);
   --description-color: #777777;
-  --badge-background-color: #F3F4F6;
+  --quote-background-color: #f9fafb;
 
   --background-main-color: #ffffff;
   --text-main-color: #000000;
@@ -84,7 +84,7 @@ main {
     --main-color: #9B6CFF;
     --main-color-rgb: rgb(155, 108, 255);
     --description-color: #BBBBBB;
-    --badge-background-color: #F3F4F6;
+    --quote-background-color: #1f2933;
 
     --background-main-color: #000000;
     --text-main-color: #ffffff;
