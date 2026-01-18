@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
+import remarkFootnotes from 'remark-footnotes';
 import rehypeRaw from "rehype-raw";
 
 export default function PostBody({ markdownFile }){
@@ -13,7 +14,7 @@ export default function PostBody({ markdownFile }){
 
     return (
         <div className="post-body">
-            <ReactMarkdown rehypePlugins={rehypeRaw}>{content}</ReactMarkdown>
+            <ReactMarkdown rehypePlugins={rehypeRaw} remarkPlugins={[remarkFootnotes]}>{content}</ReactMarkdown>
         </div>
     );
 }

@@ -59,3 +59,22 @@
     display: flex;
     gap: 1rem;
 }
+
+.footnotes h2 {
+  display: none;
+}
+
+.footnotes ol {
+    padding-left: 20px;
+    margin-left: 0;
+}
+
+.footnotes li {
+    margin-left: 0;
+}
+
+.footnotes {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--description-color);
+}
